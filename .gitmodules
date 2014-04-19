@@ -1,0 +1,3 @@
+[submodule "android-db-commons"]
+	path = android-db-commons
+	url = https://github.com/futuresimple/android-db-commons.git

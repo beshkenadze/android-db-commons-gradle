@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9+'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'android-library'
+apply plugin: 'maven'
+
+version '0.7.0'
+group 'com.getbase.android.db'
+
+
+dependencies {
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.google.guava:guava:16.0.+'
+    compile 'com.google.code.findbugs:jsr305:2.0.2'
+}
+
+android {
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['android-db-commons/library/src/main']
+        }
+    }
+    compileSdkVersion 19
+    buildToolsVersion '19.0.3'
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+android.libraryVariants
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file://"+System.getProperty("user.home")+"/.m2/repository")
+        }
+    }
+}
