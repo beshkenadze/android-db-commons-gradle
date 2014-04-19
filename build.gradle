@@ -29,7 +29,7 @@ android {
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = ['android-db-commons/library/src/main']
+            java.srcDirs = ['android-db-commons/library/src/main/java']
         }
     }
     compileSdkVersion 19
