@@ -22,3 +22,8 @@ Maven artifact in local repo
   $ ./gradlew uploadArchives
 ```
 
+Maven repository
+=====================
+```
+maven { url 'https://raw.github.com/beshkenadze/android-db-commons-gradle/mvn-repo' }
+```
