@@ -15,7 +15,7 @@ repositories {
 apply plugin: 'android-library'
 apply plugin: 'maven'
 
-version '0.7.0'
+version '0.7.1'
 group 'com.getbase.android.db'
 
 
