@@ -25,5 +25,13 @@ Maven artifact in local repo
 Maven repository
 =====================
 ```
-maven { url 'https://raw.github.com/beshkenadze/android-db-commons-gradle/mvn-repo' }
+repositories {
+  maven { url 'https://raw.github.com/beshkenadze/android-db-commons-gradle/mvn-repo' }
+}
+```
+and 
+```
+dependencies {
+  compile 'com.getbase.android.db:library:0.7.+'
+}
 ```
